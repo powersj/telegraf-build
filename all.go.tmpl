@@ -1,0 +1,9 @@
+package all
+
+{{- if .Plugins }}
+import (
+{{- range .Plugins }}
+    _ "github.com/influxdata/telegraf/plugins/{{ $.Type }}/{{ . }}"
+{{- end }}
+)
+{{- end }}

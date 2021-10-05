@@ -1,0 +1,36 @@
+linters:
+  enable:
+    - bodyclose
+    - dogsled
+    - dupl
+    - errcheck
+    - errorlint
+    - funlen
+    - gocritic
+    - godot
+    - gofumpt
+    - goimports
+    - goprintffuncname
+    - gosimple
+    - govet
+    - ineffassign
+    - lll
+    - misspell
+    - nakedret
+    - nilerr
+    - predeclared
+    - revive
+    - sqlclosecheck
+    - staticcheck
+    - typecheck
+    - unconvert
+    - unused
+    - varcheck
+    - whitespace
+    - wrapcheck
+linters-settings:
+  lll:
+    line-length: 100
+    tab-width: 4
+  misspell:
+    locale: US
