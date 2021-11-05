@@ -10,7 +10,7 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:              "telegraf-mod",
+	Use:              "telegraf-build",
 	Short:            "Minifi telegraf build with only the required plugins",
 	Long:             `Minifi telegraf build with only the required plugins`,
 	Args:             args,

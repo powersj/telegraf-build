@@ -7,7 +7,7 @@ build:
 
 .PHONY: clean
 clean:
-	rm -f telegraf-mod
+	rm -f telegraf-build
 
 .PHONY: lint
 lint:
