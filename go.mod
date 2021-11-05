@@ -1,4 +1,4 @@
-module telegraf-mod
+module telegraf-build
 
 go 1.17
 
