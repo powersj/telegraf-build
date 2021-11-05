@@ -1,4 +1,4 @@
-# telegraf-mod
+# telegraf-build
 
 Use to build Telegraf with only the specific input, output, processor, and
 aggregator plugins enabled. By default, builds with all plugins disabled.
@@ -10,7 +10,7 @@ Additionally the path to the Telegraf source to build is required if not run
 from that directory:
 
 ```shell
-telegraf-mod --source ~/telegraf --inputs cpu --outputs file
+telegraf-build --source ~/telegraf --inputs cpu --outputs file
 ```
 
 The above would build Telegraf from the user's home directory with only the CPU
@@ -20,15 +20,15 @@ Multiple plugins can be specified either by additional flags or
 comma-separated. The two commands below are identical:
 
 ```shell
-telegraf-mod --source ~/telegraf --inputs cpu,mem --outputs file
-telegraf-mod --source ~/telegraf --inputs cpu --inputs mem --outputs file
+telegraf-build --source ~/telegraf --inputs cpu,mem --outputs file
+telegraf-build --source ~/telegraf --inputs cpu --inputs mem --outputs file
 ```
 
 Users can pass one or more valid Telegraf TOML files to see what plugins are
 required:
 
 ```shell
-telegraf-mod --source ~/telegraf --config <file> [--config <file>]
+telegraf-build --source ~/telegraf --config <file> [--config <file>]
 ```
 
 Using both config files and explicit declarations are also possible. The final
